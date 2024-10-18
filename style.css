@@ -1,0 +1,381 @@
+/* Universal Marker */
+* {
+  margin: 0;
+  padding: 0; /*<---Global reset ez a művelet.*/
+  /* background-color: black; */
+  box-sizing: border-box;
+}
+
+/* PAGE SECTIONS */
+body {
+  color: #444;
+  font-family: sans-serif;
+
+  /*
+  There are styles that are not getting
+   inherited, for practical reasons, see example 
+   below
+   */
+  border-top: 10px solid #1098ad;
+}
+
+/*
+h1,
+h2,
+h3,
+h4,
+p,
+li { */
+/* color: #444444; */ /*
+}
+*/
+
+.container {
+  width: 1200px;
+  /*margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.legteteje {
+  background-color: #f7f7f7;
+  padding: 20px;
+  /*padding-left: 40px;
+  padding-right: 40px;*/
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 180; */
+}
+
+nav {
+  font-size: 18px;
+  text-align: center;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block;
+  
+  margin-right: 30px;
+  margin-top: 30px;
+  display: inline-block;*/
+  margin-right: 30px;
+  width: 100%;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+
+  padding: 50px 40px;
+}
+
+/* SMALLER ELEMENTS */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+
+  right: -15px;
+  top: -25px;
+  color: black;
+}
+
+h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /*display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+#forma1 {
+  font-style: normal;
+}
+
+/* footer p {
+  font-size: 12px;
+} */
+/* Az alábbi, nem jó használni, mert bonyolult technika) 
+article header p {
+  font-style: italic;
+}
+*/
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#Copyrights {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related-posters {
+  list-style: none;
+  margin-left: 0;
+}
+
+body {
+  /* background-color: #1098ad; */
+}
+
+/*
+Az alábbit, nem a legjobb használni. Ehelyett a
+ következő példában sudo classokat csinálunk, lásd, 
+ következő kijelölés
+
+.first-line-li {
+  font-weight: bold;
+  color: red;
+} */
+
+/* Itt alább a ----- S U D O ------ selectors utasításokkal adhatok 
+mindenre utasítást
+külön jelölgetések nélkül */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  /*color: rebeccapurple;*/
+}
+
+/* Misconception: this won't work! Mivel az első child element az article parent 
+elementben az nem egy paraghraph hanem egy header divzió, így nincs minek
+vörösen megjlelenni */
+article p:first-child {
+  color: red;
+}
+
+/* Styling links those one which has hrefs in them only
+VALAMINT FONTOS MEGJEGYEZNE, HOGY AZ ALANT LÉVŐ
+4 S U D O CLASSNAK EBBEN A SORRENDBEN KELL EGYMÁST KÖVETNIE,
+HOGY MŰKÖDJÖN. 
+l,
+v,
+h,
+a */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: orange; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline #1098ad;
+}
+
+/* active S U D O class az arra a státuszra jön létre,
+amikor éppen rákatintok a linkre*/
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px;
+*/
+  bottom: 50px;
+  right: 50px;
+}
+
+/* -----  SUDO ELEMENTS -------*/
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/*adjacent sibling selector*/
+h3 + p::first-line {
+  /*color: red;*/
+}
+
+/* //////////////////////////////////////////////////////////////////
+priority for conflicting declarations.
+
+-1th. Declarations marked !important (hack to resolt conflict as 
+a last resort)
+
+0th. Inline stlye (style attribute in HTML)
+
+1st. ID (#) selector
+
+2nd. Class (.) or pseudo-class (:) selector
+
+3rd. Element selector(p,div,li,etc.)
+
+4th. Universal selector* 
+*/
+
+/* Resolving conflicts */
+#Copyrights {
+  color: blue;
+}
+
+.Text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
+
+/* (hack to resolt conflict as a last resort) means this will appear*/
+footer p {
+  color: green !important;
+}
+
+/* ha csak szelektorokról van szó mint p {} p {} akkor cmindig 
+az érvényesül amelyik később következik a kódban. */
+
+/* nav a:link {
+  font-size: 18px;
+}
+nav p {
+  font-size: 18px;
+} */
+
+/* ((((((------- FLOATS -------))))))))*/
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.product-info
