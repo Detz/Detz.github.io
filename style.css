@@ -379,3 +379,9 @@ footer {
 }
 
 .product-info
+
+.hero {
+  height: 500px;
+  position: relative;
+   overflow: hidden; /* Ha a kép nagyobb lenne, kivágja */
+}
