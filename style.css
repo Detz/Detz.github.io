@@ -381,7 +381,7 @@ footer {
 .product-info
 
 .hero {
-  height: 500px;
-  position: relative;
-   overflow: hidden; /* Ha a kép nagyobb lenne, kivágja */
+  width: 100%; /* A kép szélességét a szülő elem szélességéhez igazítja */
+  height: 100%; /* A kép magassága kitölti a hero szakasz magasságát */
+  object-fit: cover; /* Kivágja a képet úgy, hogy az kitöltse a szülő elem méretét */
 }
